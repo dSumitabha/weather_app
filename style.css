@@ -1,0 +1,146 @@
+* {
+	margin : 0;
+	padding  : 0;
+	box-sizing : border-box;
+}
+body::before {
+  content: "";
+  background-image: url('res/cityscape_model.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1; /* Place the pseudo-element behind the content */
+  filter: contrast(50%); /* Adjust the percentage based on your preference */
+}
+body {
+	overflow-y : hidden;
+	height : 100vh;
+	font-family : sans-serif;
+}
+			/* Default Page Styling  */
+.first-page {
+	margin : 5vh auto;
+	height : 90vh;
+	display : flex;
+	flex-flow : column nowrap;
+	justify-content : center;
+	align-items : center;
+	row-gap : 3rem;
+}
+.first-page .search-box {
+	display : flex;
+	background : #fff;
+	scale : 1.5;
+}
+.first-page .search-box .query-city {
+	width : 225px;
+}
+.error-msg {
+	background-color : #dc3545;
+	color : #fff;
+	padding :0.15rem 2rem;
+	display : none;
+	transition :all 2s ease-in;
+}
+			/* Main Page Styling  */
+main{
+	margin : 5vh auto;
+	width : 90vw;
+	height : 90vh;
+	display : none;
+	justify-content : space-between;
+}
+			/* Left Side Styling  */
+.left-side {
+	width : fit-content;
+	color : #fff;
+}
+.status-visual {
+	width : 30%;
+	aspect-ratio : 1/1;
+	object-fit : none;
+}
+.stat {
+	font-size : 0.75rem;
+	margin : -0.5rem 0 0 0;
+}
+.city-name {
+	margin-top : 1rem;
+	font-size : 2rem;
+}
+.temparature {
+	font-weight : 400;
+	font-size : 2.75rem;
+}
+.temparature span {
+	font-weight : 700;
+	font-size : 3rem;
+	vertical-align: text-top;
+}
+.search-box {
+	margin-top : 1rem;
+	height: 30px;
+    background: #ffffff40;
+    width: fit-content;
+    border-radius: 30px;
+    padding: 0 15px;
+}
+.query-city {
+	vertical-align : middle;
+	height : 100%;
+	border : none;
+	width : 12vw;
+	min-width : 160px;
+	background : transparent;
+}
+.query-city:focus {
+	outline : none;
+}
+.search-button {
+	height : 100%;
+	background : url('res/icons/search.svg');
+	background-position: center;
+	background-repeat : no-repeat;
+	aspect-ratio : 1/1;
+	border : none;
+	vertical-align : middle;
+}
+			/* Right Side Styling */
+
+.right-side {
+	width : fit-content;
+	height : 70vh;
+}
+.status-card {
+	display : flex;
+	flex-flow : row nowrap;
+	height : 4rem;
+	align-items : center;
+}
+.status-icon {
+	height : 60%;
+	filter : invert(1);
+}
+.status-info {
+	height : 100%;    
+	padding: 0 0 0 1rem;
+	display : flex;
+	flex-flow : column nowrap;
+	justify-content : space-evenly;
+	color : #fff;
+}
+.status-name {
+	font-size : 0.75rem;
+	font-weight : 400;
+}
+.status-value {
+	
+}
+.wind-direction {
+	
+}

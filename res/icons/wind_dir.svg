@@ -1,0 +1,21 @@
+<svg width="522" height="512" xmlns="http://www.w3.org/2000/svg" fill="none">
+ <g id="Layer_1">
+  <title>Layer 1</title>
+  <g id="svg_5">
+   <path id="svg_1" d="m261,434c-99.44751,0 -180,-80.55249 -180,-180c0,-99.44751 80.55249,-180 180,-180c99.44751,0 180,80.55249 180,180c0,99.44751 -80.55249,180 -180,180z" opacity="undefined" stroke-width="12" fill="none" stroke="#ff3535"/>
+   <path id="svg_2" d="m261,437.99999c-95.30386,0 -172.5,-77.19613 -172.5,-172.5c0,-95.30386 77.19613,-172.5 172.5,-172.5c95.30386,0 172.5,77.19613 172.5,172.5c0,95.30386 -77.19613,172.5 -172.5,172.5z" opacity="undefined" stroke-width="10" fill="#ffffff" stroke="#ffffff"/>
+  </g>
+  <g id="svg_10" stroke="null">
+   <line id="svg_3" y2="400.58595" x2="260.64532" y1="118.83448" x1="260.64532" stroke-width="10" fill="none" stroke="#ff3535"/>
+   <g id="svg_9" stroke="null">
+    <line id="svg_7" y2="111.41404" x2="258.15746" y1="167.03452" x1="315.81" stroke-width="10" fill="none" stroke="#ff3535"/>
+    <line filter="url(#svg_8_blur)" id="svg_8" y2="167.29698" x2="206.19" y1="111.6765" x1="263.84254" stroke-width="10" fill="none" stroke="#ff3535"/>
+   </g>
+  </g>
+ </g>
+ <defs>
+  <filter id="svg_8_blur">
+   <feGaussianBlur stdDeviation="0.1" in="SourceGraphic"/>
+  </filter>
+ </defs>
+</svg>
