@@ -51,7 +51,7 @@ body {
 main{
 	margin : 5vh auto;
 	width : 90vw;
-	height : 90vh;
+	height : 60vh;
 	display : none;
 	justify-content : space-between;
 }
@@ -73,6 +73,7 @@ main{
 	margin-top : 1rem;
 	font-size : 2rem;
 }
+
 .temparature {
 	font-weight : 400;
 	font-size : 2.75rem;
@@ -110,6 +111,14 @@ main{
 	border : none;
 	vertical-align : middle;
 }
+			/* Clock Styling */
+
+.digi-clock {
+	margin : 2rem 0 0 0;
+	font-size : 6rem;
+	color : #ebe4cb;
+	opacity : 0.8;
+}
 			/* Right Side Styling */
 
 .right-side {
@@ -119,8 +128,14 @@ main{
 .status-card {
 	display : flex;
 	flex-flow : row nowrap;
-	height : 4rem;
 	align-items : center;
+	height : 4rem;
+	animation-name : beautify;
+	animation-duration : 2s;
+}
+@keyframes beautify {
+	0% {opacity : 0;}
+	100% {opacity : 1;}
 }
 .status-icon {
 	height : 60%;
@@ -133,14 +148,9 @@ main{
 	flex-flow : column nowrap;
 	justify-content : space-evenly;
 	color : #fff;
+	
 }
 .status-name {
 	font-size : 0.75rem;
 	font-weight : 400;
-}
-.status-value {
-	
-}
-.wind-direction {
-	
 }
