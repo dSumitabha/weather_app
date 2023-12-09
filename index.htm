@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -6,6 +7,9 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Weather App</title>
     <link rel="stylesheet" href="style.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap" rel="stylesheet">
   </head>
   <body>
 	<div class="first-page">
@@ -26,34 +30,35 @@
 			<input type="submit" class="search-button" id="searchBtn" value=""/>
 		</form>
 		<p class="error-msg">Enter a valid cityname.</p>
+		<h1 class="digi-clock"></h1>
 		</div>
 		<div class="right-side">
 		<div class="status-card ">
 			<img src="res/icons/humidity.svg" alt="humidity" class="status-icon" />
 			<div class="status-info">
 				<h3 class="status-name">Humidity</h3>
-				<h3 class="status-value humidity"></h3>
+				<h3 class="humidity"></h3>
 			</div>
 		</div>
 		<div class="status-card ">
 			<img src="res/icons/air_pressure.svg" alt="air-pressure" class="status-icon" />
 			<div class="status-info">
 				<h3 class="status-name">Air Pressure</h3>
-				<h3 class="status-value air-pressure"></h3>
+				<h3 class="air-pressure"></h3>
 			</div>
 		</div>
 		<div class="status-card ">
 			<img src="res/icons/fog.png" alt="Chance of Rain" class="status-icon" />
 			<div class="status-info">
 				<h3 class="status-name">visibility</h3>
-				<h3 class="status-value visibility"></h3>
+				<h3 class="visibility"></h3>
 			</div>
 		</div>
 		<div class="status-card ">
 			<img src="res/icons/wind.svg" alt="Wind Speed" class="status-icon" />
 			<div class="status-info">
 				<h3 class="status-name">Wind Speed</h3>
-				<h3 class="status-value wind-speed"></h3>
+				<h3 class="wind-speed"></h3>
 			</div>
 		</div>
 		<div class="status-card ">
@@ -62,8 +67,24 @@
 				<h3 class="status-name">Wind Direction </h3>
 			</div>
 		</div>
+		<div class="status-card" >
+			<img src="res/icons/sunrise.svg" alt="Sun Rise" class="status-icon" />
+			<div class="status-info">
+				<h3 class="status-name">Sunrise Time</h3>
+				<h3 class="sunrise-time"></h3>
+			</div>
 		</div>
+		<div class="status-card" >
+			<img src="res/icons/sunset.svg" alt="Sun Set" class="status-icon " />
+			<div class="status-info">
+				<h3 class="status-name">Sunset Time</h3>
+				<h3 class="sunset-time"></h3>
+			</div>
+		</div>
+		</div>
+
 	</main>
+	
 	<script src="script.js"></script>
   </body>
 </html>
